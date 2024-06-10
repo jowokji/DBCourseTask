@@ -10,36 +10,30 @@ alter table Users add constraint email_unique unique(Email)
 CREATE TABLE Product (
   ProductID Serial PRIMARY KEY ,
   Name VARCHAR(255) NOT NULL,
-  Description TEXT NOT NULL,
   Price DECIMAL(10,2) NOT NULL,
-  StockLevel INT NOT NULL,
   BrandID INT NOT NULL,
   CategoryID INT NOT NULL,
   Material VARCHAR(255) NOT NULL,
   Condition VARCHAR(255) NOT NULL,
-  YearReleased INT NOT NULL,
+  ProductArticle text unique not null,
   FOREIGN KEY (BrandID) REFERENCES Brand (BrandID),
   FOREIGN KEY (CategoryID) REFERENCES Category (CategoryID)
 );
+
 CREATE TABLE Brand (
   BrandID Serial PRIMARY KEY ,
-  Name VARCHAR(255) NOT NULL
+  Name VARCHAR(255) unique NOT NULL
 );
 CREATE TABLE Category (
   CategoryID Serial PRIMARY KEY,
-  Name VARCHAR(255) NOT NULL
+  Name VARCHAR(255) unique NOT NULL
 );
 CREATE TABLE Cart (
   CartID Serial PRIMARY KEY ,
   UserID INT NOT NULL,
-  FOREIGN KEY (UserID) REFERENCES Users (UserID)
-);
-CREATE TABLE Cart_Item (
-  CartItemID Serial PRIMARY KEY ,
-  CartID INT NOT NULL,
-  ProductID INT NOT NULL,
-  Quantity INT NOT NULL,
-  FOREIGN KEY (CartID) REFERENCES Cart (CartID),
+  ProductID int not null,
+  Quantity int,
+  FOREIGN KEY (UserID) REFERENCES Users (UserID),
   FOREIGN KEY (ProductID) REFERENCES Product (ProductID)
 );
 CREATE TABLE "Order" (
@@ -51,12 +45,13 @@ CREATE TABLE "Order" (
   PaymentMethod VARCHAR(255) NOT NULL,
   FOREIGN KEY (UserID) REFERENCES Users (UserID)
 );
+
+alter table "Order" add column Status  VARCHAR(255) not null;
 CREATE TABLE Order_Item (
   OrderItemID Serial PRIMARY KEY ,
   OrderID INT NOT NULL,
   ProductID INT NOT NULL,
   Quantity INT NOT NULL,
-  Price DECIMAL(10,2) NOT NULL,
   FOREIGN KEY (OrderID) REFERENCES "Order" (OrderID),
   FOREIGN KEY (ProductID) REFERENCES Product (ProductID)
 );
@@ -68,3 +63,23 @@ CREATE TABLE Wishlist (
   FOREIGN KEY (ProductID) REFERENCES Product (ProductID)
 );
 
+CREATE UNIQUE INDEX Wishlist_unique
+ON Wishlist (UserID, ProductID);
+
+CREATE UNIQUE INDEX Cart_unique
+ON Cart (UserID, ProductID);
+
+CREATE UNIQUE INDEX Order_Item_unique
+ON Order_Item (OrderID, ProductID);
+
+SElECT * FROM product
+
+SElECT * FROM users
+
+SElECT * FROM wishlist
+
+SElECT * FROM Cart
+
+SElECT * FROM Order_Item
+
+SElECT * FROM "Order"
