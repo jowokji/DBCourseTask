@@ -1,0 +1,11 @@
+Email,ProductArticle,CartQuantity,OrderDate,Status,ShippingAddress,BillingAddress,PaymentMethod,OrderQuantity
+banana1@example.com,P001,1,2023-01-15 10:20:00,Created,Oak st 1,Oak st 1,Card,1
+apple1@example.com,P002,1,2023-02-10 12:20:00,Confirmed,Willian st 12,Willian st 12,Card,1
+cherry1@example.com,P003,1,2023-01-02 09:03:00,Confirmed,Red st 4,Red st 4,Card,1
+cucumber1@example.com,P004,1,2023-04-05 16:10:00,Created,Grass st 28,Grass st 28,Card,1
+grape1@example.com,P005,1,2023-01-10 10:05:00,Paid,Savanorio pr 3,Savanorio pr 3,Card,1
+pineapple1@example.com,P005,1,2023-01-15 10:20:00,Paid,Leaf st 8,Leaf st 8,Card,1
+coconut1@example.com,P007,1,2023-04-15 10:20:00,Created,Gedemino st 4,Gedemino st 4,Card,1
+mango1@example.com,P008,1,2023-01-15 10:20:00,Paid,Great st 22,Great st 22,Card,1
+tomato1@example.com,P009,1,2023-06-11 11:24:00,Confirmed,Small st 5,Small st 5,Card,1
+orange1@example.com,P010,1,2023-11-03 19:20:00,Created,Shine st 44,Shine st 44,Card,1
