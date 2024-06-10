@@ -1,51 +1,11 @@
-ProductID,Name,Description,Price,StockLevel,BrandID,CategoryID,Material,Condition,YearReleased
-1,Vintage Item 1,Description of vintage item 1,19.99,10,1,2,Cotton,New,2022
-2,Vintage Item 2,Description of vintage item 2,29.99,5,2,1,Wool,Like New,2014
-3,Vintage Item 3,Description of vintage item 3,15.49,20,3,3,Silk,Good,2009
-4,Vintage Item 4,Description of vintage item 4,49.99,7,1,2,Polyester,Fair,2001
-5,Vintage Item 5,Description of vintage item 5,12.99,30,2,1,Cotton,New,2018
-6,Vintage Item 6,Description of vintage item 6,89.99,4,3,3,Wool,Like New,2016
-7,Vintage Item 7,Description of vintage item 7,19.49,15,4,2,Silk,Good,2017
-8,Vintage Item 8,Description of vintage item 8,39.99,25,1,1,Polyester,Fair,1999
-9,Vintage Item 9,Description of vintage item 9,24.99,18,2,3,Cotton,New,2001
-10,Vintage Item 10,Description of vintage item 10,44.99,9,3,2,Wool,Like New,2015
-11,Vintage Item 11,Description of vintage item 11,20.49,12,4,1,Silk,Good,2004
-12,Vintage Item 12,Description of vintage item 12,59.99,20,1,3,Polyester,Fair,2001
-13,Vintage Item 13,Description of vintage item 13,13.99,8,2,2,Cotton,New,2023
-14,Vintage Item 14,Description of vintage item 14,79.99,5,3,1,Wool,Like New,2020
-15,Vintage Item 15,Description of vintage item 15,22.49,17,4,3,Silk,Good,2020
-16,Vintage Item 16,Description of vintage item 16,34.99,14,1,2,Polyester,Fair,2003
-17,Vintage Item 17,Description of vintage item 17,25.99,22,2,1,Cotton,New,2023
-18,Vintage Item 18,Description of vintage item 18,45.99,6,3,3,Wool,Like New,2021
-19,Vintage Item 19,Description of vintage item 19,18.49,19,4,2,Silk,Good,2014
-20,Vintage Item 20,Description of vintage item 20,55.99,11,1,1,Polyester,Fair,2001
-21,Vintage Item 21,Description of vintage item 21,14.99,23,2,3,Cotton,New,2024
-22,Vintage Item 22,Description of vintage item 22,65.99,7,3,2,Wool,Like New,2020
-23,Vintage Item 23,Description of vintage item 23,27.49,10,4,1,Silk,Good,2024
-24,Vintage Item 24,Description of vintage item 24,33.99,21,1,3,Polyester,Fair,2018
-25,Vintage Item 25,Description of vintage item 25,19.99,9,2,2,Cotton,New,2023
-26,Vintage Item 26,Description of vintage item 26,47.99,8,3,1,Wool,Like New,2023
-27,Vintage Item 27,Description of vintage item 27,16.49,15,4,3,Silk,Good,2019
-28,Vintage Item 28,Description of vintage item 28,35.99,12,1,2,Polyester,Fair,2003
-29,Vintage Item 29,Description of vintage item 29,28.99,20,2,1,Cotton,New,2024
-30,Vintage Item 30,Description of vintage item 30,49.99,6,3,3,Wool,Like New,2023
-31,Vintage Item 31,Description of vintage item 31,20.49,16,4,2,Silk,Good,2018
-32,Vintage Item 32,Description of vintage item 32,37.99,14,1,1,Polyester,Fair,2010
-33,Vintage Item 33,Description of vintage item 33,22.99,13,2,3,Cotton,New,2024
-34,Vintage Item 34,Description of vintage item 34,54.99,7,3,2,Wool,Like New,2023
-35,Vintage Item 35,Description of vintage item 35,18.49,18,4,1,Silk,Good,2021
-36,Vintage Item 36,Description of vintage item 36,41.99,11,1,3,Polyester,Fair,2001
-37,Vintage Item 37,Description of vintage item 37,23.99,20,2,2,Cotton,New,2023
-38,Vintage Item 38,Description of vintage item 38,67.99,5,3,1,Wool,Like New,2023
-39,Vintage Item 39,Description of vintage item 39,17.49,22,4,3,Silk,Good,2014
-40,Vintage Item 40,Description of vintage item 40,31.99,17,1,2,Polyester,Fair,2013
-41,Vintage Item 41,Description of vintage item 41,19.99,12,2,1,Cotton,New,2024
-42,Vintage Item 42,Description of vintage item 42,52.99,6,3,3,Wool,Like New,2024
-43,Vintage Item 43,Description of vintage item 43,15.49,15,4,2,Silk,Good,2019
-44,Vintage Item 44,Description of vintage item 44,38.99,19,1,1,Polyester,Fair,2003
-45,Vintage Item 45,Description of vintage item 45,21.99,14,2,3,Cotton,New,2023
-46,Vintage Item 46,Description of vintage item 46,59.99,9,3,2,Wool,Like New,2024
-47,Vintage Item 47,Description of vintage item 47,19.49,18,4,1,Silk,Good,2019
-48,Vintage Item 48,Description of vintage item 48,46.99,10,1,3,Polyester,Fair,2010
-49,Vintage Item 49,Description of vintage item 49,24.99,13,2,2,Cotton,New,2023
-50,Vintage Item 50,Description of vintage item 50,69.99,7,3,1,Wool,Like New,2022
+ProductArticle,Name,Price,BrandName,CategoryName,Material,Condition
+P001,Vintage Jeans,300,Adidas,Trousers,Denim,New
+P002,Vintage Shirt,370,Levice,Shirts,Cotton,Good
+P003,Vintage Shorts,250,Nike,Shorts,Cotton,Normal
+P004,Vintage T-shirt,400,Nike,T-shirts,Polyester,New
+P005,Vintage Boots,800,Geox,FootWear,Leather,Good
+P006,Vintage Socks,100,Reebok,Socks,Cotton,New
+P007,Vintage Hoodie,600,Levice,Hoodies,Cotton,Normal
+P008,Vintage Trousers,340,Levice,Trousers,Denim,Good
+P009,Vintage Sneakers,450,Adidas,FootWear,Polyester,New
+P010,Vintage Jacket,520,Lacoste,Jackets,Leather,Normal
